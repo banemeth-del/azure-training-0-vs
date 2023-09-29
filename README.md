@@ -1,0 +1,1 @@
+# azure-training-0-vs
