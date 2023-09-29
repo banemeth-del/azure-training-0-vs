@@ -14,6 +14,7 @@ namespace azure_training_0_vs.Pages
 
         public void OnGet()
         {
+            throw new Exception("Hiba");
         }
     }
 }
