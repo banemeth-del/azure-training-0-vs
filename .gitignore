@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.github/workflows/stage_azure-app-vs(staging).yml
+/.github/workflows/stage_azure-app-vs(staging).yml
