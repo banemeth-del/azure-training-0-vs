@@ -1,6 +1,15 @@
+using azure_training_0_vs.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//Inject to use azure sql database
+var connectionString = builder.Configuration.GetConnectionString("AzureSqlConnection");
+builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(connectionString));
+//
+
 builder.Services.AddRazorPages();
 builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
 
